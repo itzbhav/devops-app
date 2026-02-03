@@ -21,9 +21,4 @@ public class AppTest {
         int result = 2 + 2;
         assertEquals("2 + 2 should equal 4", 4, result);
     }
-    
-    @Test
-    public void testIntentionalFailure() {
-        fail("This test is intentionally failing to demonstrate quality gate");
-    }
 }
