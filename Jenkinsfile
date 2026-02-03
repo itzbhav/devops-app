@@ -2,15 +2,11 @@
 pipeline {
     agent any
     
-    options {
-        skipDefaultCheckout()
-    }
-    
     stages {
         stage('Checkout Source') {
             steps {
-                git url: 'https://github.com/itzbhav/devops-app.git',
-                    branch: 'main'
+                echo 'Checking out source code from GitHub'
+                checkout scm
             }
         }
         
